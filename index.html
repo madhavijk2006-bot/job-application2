@@ -1,0 +1,26 @@
+!DOCTYPE html>
+<html>
+<head>
+    <title>AI Career Counselor</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <h2>AI Career Counselor</h2>
+    <p>Upload your resume and enter your skills. AI will suggest the best job role.</p>
+
+    <form action="/predict" method="POST" enctype="multipart/form-data">
+        <label>Upload Resume (PDF):</label>
+        <input type="file" name="resume" required><br><br>
+
+        <label>Your Skills (comma separated):</label>
+        <input type="text" name="skills" placeholder="Python, HTML, ML" required><br><br>
+
+        <label>Experience (in years):</label>
+        <input type="number" name="experience" min="0" required><br><br>
+
+        <button type="submit">Predict Job Role</button>
+    </form>
+
+</body>
+</html>
